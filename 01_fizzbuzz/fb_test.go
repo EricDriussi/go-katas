@@ -1,7 +1,7 @@
 package fizzbuzz_test
 
 import (
-	"katas/fizzbuzz"
+	"katas/01_fizzbuzz"
 	"testing"
 )
 

@@ -1,7 +1,7 @@
 package anagram_test
 
 import (
-	"katas/anagram"
+	"katas/02_anagram"
 	"testing"
 )
 
