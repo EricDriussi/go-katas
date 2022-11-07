@@ -9,5 +9,5 @@ import (
 func main() {
 	fizzbuzz.Run()
 	anagram.Run("inch", "chin")
-	prime.Run()
+	prime.Run(7)
 }
