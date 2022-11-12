@@ -1,4 +1,4 @@
-package anagram_test
+package fuzz_test
 
 import (
 	"katas/02_anagram"
@@ -8,7 +8,7 @@ import (
 	"testing"
 )
 
-func FuzzPrimes(f *testing.F) {
+func FuzzAnagram(f *testing.F) {
 	randPairs := map[string]string{"testing": "testing", "amor": "roma", "brag": "grab"}
 	for k, v := range randPairs {
 		f.Add(k, v)

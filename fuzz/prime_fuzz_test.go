@@ -1,4 +1,4 @@
-package prime_test
+package fuzz_test
 
 import (
 	"katas/03_prime"
