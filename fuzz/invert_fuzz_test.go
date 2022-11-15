@@ -1,7 +1,7 @@
 package fuzz_test
 
 import (
-	"katas/06_invert"
+	invert "katas/06_invert"
 	"testing"
 )
 

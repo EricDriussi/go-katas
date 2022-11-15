@@ -3,7 +3,7 @@ package prime
 import "fmt"
 
 func Run(num int) bool {
-	printPrimeNumbersTo100()
+	// printPrimeNumbersTo100()
 	return isPrime(num)
 }
 
