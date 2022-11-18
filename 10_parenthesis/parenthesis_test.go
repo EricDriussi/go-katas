@@ -1,6 +1,7 @@
 package parenthesis_test
 
 import (
+	"fmt"
 	"katas/10_parenthesis"
 	"testing"
 )
@@ -30,15 +31,16 @@ func TestComplexIncorrect(t *testing.T) {
 	cases := []string{
 		"{a + b [c] * (2x2)}}}}",
 		"{ a * ( c + d ) ] - 5 }",
-		"[ { a * ( c + d ) ] - 5 }",
 		"{a^4 + (((ax4)}",
-		"{ ] a * ( c + d ) + ( 2 - 3 )[ - 5 }",
 		"{{{{{{(}}}}}}",
 		"(a",
+		"[ { a * ( c + d ) ] - 5 }",
+		"{ ] a * ( c + d ) + ( 2 - 3 )[ - 5 }",
 	}
 
 	for _, c := range cases {
 		result := parenthesis.Run(c)
+		fmt.Println("======")
 		if result != false {
 			t.Logf(c)
 			t.Fail()
